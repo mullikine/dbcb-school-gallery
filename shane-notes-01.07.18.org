@@ -1,0 +1,47 @@
+* <2018-07-01 Sun> Set up environment again
+
+** terminal
+*** shortcuts
+| shortcut | function          |
+|----------+-------------------|
+| C-a      | start of the line |
+| C-e      | end of line       |
+
+*** functions
+| command              | function                                |
+|----------------------+-----------------------------------------|
+| cd /some/folder/path | goes to the path folder in the terminal |
+
+
+** wifi password
+
+g75#gZlm3
+
+** install
+
+*** XAMPP
+
+https://www.apachefriends.org/download.html
+
+*** brew
+
+#+BEGIN_SRC sh
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#+END_SRC
+
+*** emacs
+
+*** spacemacs
+
+http://spacemacs.org/
+
+Click download.
+
+#+BEGIN_SRC sh
+  git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+#+END_SRC
+
+*** website git
+#+BEGIN_SRC sh
+  git clone https://github.com/mullikine/dbcb-school-gallery
+#+END_SRC

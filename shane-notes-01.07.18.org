@@ -12,10 +12,11 @@
 |----------------------+-----------------------------------------|
 | cd /some/folder/path | goes to the path folder in the terminal |
 
-
 ** wifi password
 
-g75#gZlm3
+#+BEGIN_SRC text
+  g75#gZlm3
+#+END_SRC
 
 ** install
 

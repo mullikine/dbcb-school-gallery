@@ -311,3 +311,7 @@ img.gallery-image:hover {
 ul#index {
     display:inline-block;
 }
+
+table.image-data {
+	border: 1px silver solid;
+}

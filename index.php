@@ -113,11 +113,13 @@ foreach($files as $f) {
     #echo '<br>';
     #echo '<br>';
 
+    echo '
     <table class="image-data">
       <tr>
       <td>Measurements</td><td>1220x690x670mm</td>
       </tr>
       </table>
+';
 
 
     echo '<table id="image-data">';

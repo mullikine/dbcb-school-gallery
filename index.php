@@ -99,6 +99,35 @@ foreach($files as $f) {
   if (file_exists($description_file)) {
     echo '<p class="description">'.file_get_contents_utf8($description_file).'</p>';
   }
+  $data_file="gallery-images/".remove_extension($f).".csv";
+  if (file_exists($data_file)) {
+    
+    echo '<code>';
+    // print_r(file($data_file));
+    print("<pre>".print_r(file($data_file),true)."</pre>");
+    echo '</code>';
+    #$data = str_getcsv(file($data_file), "\n"); //parse the rows
+    #print_r($data);
+
+    #echo '<br>';
+    #echo '<br>';
+    #echo '<br>';
+
+    <table class="image-data">
+      <tr>
+      <td>Measurements</td><td>1220x690x670mm</td>
+      </tr>
+      </table>
+
+
+    echo '<table id="image-data">';
+    foreach($a as $k => $v) {
+      echo '<tr>';
+      echo '<td>'.$k.'</td>'.'<td>'.$v.'</td>';
+      echo '</tr>';
+    }
+    echo '</table>';
+  }
   echo '</div>'; /* gallery item */
 }
 ?>

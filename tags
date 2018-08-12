@@ -10,6 +10,7 @@ current_letter	htdocs/index.php	/^		$current_letter = $first_letter;$/;"	v
 current_letter	htdocs/index.php	/^$current_letter = NULL;$/;"	v
 current_letter	index.php	/^    $current_letter = $first_letter;$/;"	v
 current_letter	index.php	/^$current_letter = NULL;$/;"	v
+data_file	index.php	/^  $data_file="gallery-images\/".remove_extension($f).".csv";$/;"	v
 description_file	htdocs/index.php	/^	$description_file="gallery-images\/".remove_extension($f).".txt";$/;"	v
 description_file	index.php	/^  $description_file="gallery-images\/".remove_extension($f).".txt";$/;"	v
 dir	htdocs/index.php	/^$dir ='gallery-images';$/;"	v

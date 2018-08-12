@@ -30,3 +30,4 @@ first_letter	index.php	/^    $first_letter = lcfirst($f[0]);$/;"	v
 first_letter	index.php	/^  $first_letter = lcfirst($f[0]);$/;"	v
 remove_extension	htdocs/index.php	/^function remove_extension($fp) {$/;"	f
 remove_extension	index.php	/^function remove_extension($fp) {$/;"	f
+sum	index.php	/^     function sum($carry, $item)$/;"	f

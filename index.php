@@ -44,7 +44,7 @@ foreach($files as $f) {
 	<div id="results"></div>
 	</div>
        <div>
-       
+
 <?php
      function sum($carry, $item)
      {
@@ -107,7 +107,7 @@ foreach($files as $f) {
   }
   $data_file="gallery-images/".remove_extension($f).".csv";
   if (file_exists($data_file)) {
-    
+
     echo '<code>';
     // print_r(file($data_file));
     print("<pre>".print_r(file($data_file),true)."</pre>");

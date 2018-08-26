@@ -5,30 +5,15 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 content	htdocs/index.php	/^    $content = file_get_contents($fn);$/;"	v
-content	index.php	/^    $content = file_get_contents($fn);$/;"	v
 current_letter	htdocs/index.php	/^		$current_letter = $first_letter;$/;"	v
 current_letter	htdocs/index.php	/^$current_letter = NULL;$/;"	v
-current_letter	index.php	/^    $current_letter = $first_letter;$/;"	v
-current_letter	index.php	/^$current_letter = NULL;$/;"	v
-data_file	index.php	/^  $data_file="gallery-images\/".remove_extension($f).".csv";$/;"	v
 description_file	htdocs/index.php	/^	$description_file="gallery-images\/".remove_extension($f).".txt";$/;"	v
-description_file	index.php	/^  $description_file="gallery-images\/".remove_extension($f).".txt";$/;"	v
 dir	htdocs/index.php	/^$dir ='gallery-images';$/;"	v
-dir	index.php	/^$dir ='gallery-images';$/;"	v
 disabled	htdocs/index.php	/^		$disabled = false;$/;"	v
 disabled	htdocs/index.php	/^		$disabled = true;$/;"	v
-disabled	index.php	/^    $disabled = false;$/;"	v
-disabled	index.php	/^    $disabled = true;$/;"	v
 file_counts	htdocs/index.php	/^$file_counts = array();$/;"	v
-file_counts	index.php	/^$file_counts = array();$/;"	v
 file_get_contents_utf8	htdocs/index.php	/^function file_get_contents_utf8($fn) {$/;"	f
-file_get_contents_utf8	index.php	/^function file_get_contents_utf8($fn) {$/;"	f
 files	htdocs/index.php	/^$files = array_filter(scandir($dir), function($item) {$/;"	v
-files	index.php	/^$files = array_filter(scandir($dir), function($item) {$/;"	v
 first_letter	htdocs/index.php	/^	$first_letter = lcfirst($f[0]);$/;"	v
 first_letter	htdocs/index.php	/^$first_letter = lcfirst($f[0]);$/;"	v
-first_letter	index.php	/^    $first_letter = lcfirst($f[0]);$/;"	v
-first_letter	index.php	/^  $first_letter = lcfirst($f[0]);$/;"	v
 remove_extension	htdocs/index.php	/^function remove_extension($fp) {$/;"	f
-remove_extension	index.php	/^function remove_extension($fp) {$/;"	f
-sum	index.php	/^     function sum($carry, $item)$/;"	f

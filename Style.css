@@ -1,4 +1,4 @@
-﻿/* deli */
+/* deli */
 @import url('https://fonts.googleapis.com/css?family=Pacifico');
 
 @import url('https://fonts.googleapis.com/css?family=Croissant+One');
@@ -11,23 +11,20 @@
     float: left;
     position: absolute;
     top: 0;
-
 }
 
 #bob {
-	font-size: 1.1em;
-	line-height: 1.3em;
-	border:1px soild black;
-	padding:0.2em 0.4em;
-	display: inline-block;
-	min-width: 20em;
-	max-width: 100%;
-	background: url('img/Mag.png') center right no-repeat;
-	background-size: 1.3em 1.3em;
-	
-	
-
+    font-size: 1.1em;
+    line-height: 1.3em;
+    border: 1px soild black;
+    padding: 0.2em 0.4em;
+    display: inline-block;
+    min-width: 20em;
+    max-width: 100%;
+    background: url('img/Mag.png') center right no-repeat;
+    background-size: 1.3em 1.3em;
 }
+
 body {
     /* font-family: Pacifico; */
     font-family: 'Pacifico', cursive;
@@ -69,17 +66,14 @@ footer {
     border:1px solid red;
 }
 
-
 h1, h2, h3 {
     font-style: italic;
 }
 
-
 ul{
-	  padding:0;
-	  display:block;
-	  margin:0;
-
+    padding:0;
+    display:block;
+    margin:0;
 }
 
 li {
@@ -91,7 +85,7 @@ li {
 li > a {
     font-family: Pacifico;
     min-width: 1em;
-	padding:0.5em 0.55em 0.4em 0.55em;
+    padding:0.5em 0.55em 0.4em 0.55em;
     display: block;
     text-align: center;
     color: black;
@@ -100,94 +94,93 @@ li > a {
 }
 
 li.active{
-	  display:inline-block;
-	  /* background: linear-gradient(to bottom, #99ff66 0%, #ffff99 100%); */
-	  /* background: linear-gradient(to bottom, #f7f7f7 0%, #f0f0f0 100%); */
-	  background: white;
-	  border: 2px solid #99ff66;
-	  border: 2px solid white;
-	  /* border: 0.1em solid #ddf; */
-	  border: 0.1em solid #f7f7f7;
+    display:inline-block;
+    /* background: linear-gradient(to bottom, #99ff66 0%, #ffff99 100%); */
+    /* background: linear-gradient(to bottom, #f7f7f7 0%, #f0f0f0 100%); */
+    background: white;
+    border: 2px solid #99ff66;
+    border: 2px solid white;
+    /* border: 0.1em solid #ddf; */
+    border: 0.1em solid #f7f7f7;
 }
 
 li.active > a {
-	  /* color: black; */
-	  color: blue;
-      text-decoration:none;
-	  /* font-family:sans-serif; */
+    /* color: black; */
+    color: blue;
+    text-decoration:none;
+    /* font-family:sans-serif; */
 }
 
 li.active > a:hover {
-      text-decoration:underline;
+    text-decoration:underline;
 }
 
 li.active > a.bak {
-    color:rgb(247, 247, 247);
+    color: rgb(247, 247, 247);
     color: linear-gradient(to bottom, #000066 0%, #ff00ff 100%);
 }
 
 li.disabled {
-	  display:inline-block;
-	  background: linear-gradient(to bottom, #f7f7f7 0%, #f0f0f0 100%);
-	  /* border: 2px solid #999999; */
-      /* border: 0.1em solid white; */
-      border: 0.1em solid #f7f7f7;
+    display: inline-block;
+    background: linear-gradient(to bottom, #f7f7f7 0%, #f0f0f0 100%);
+    /* border: 2px solid #999999; */
+    /* border: 0.1em solid white; */
+    border: 0.1em solid #f7f7f7;
 }
 
 li.disabled > a {
-	  /* color: #666; */
-	  color: #ddd;
-	  text-decoration:none;
-	  /* font-family:sans-serif; */
+    /* color: #666; */
+    color: #ddd;
+    text-decoration: none;
+    /* font-family:sans-serif; */
 }
 
 li.disabled.bak > a {
-	  color:rgb(247, 247, 247);
+    color: rgb(247, 247, 247);
 }
 
 li.active:hover{
-	  cursor:pointer;
+    cursor: pointer;
 }
 
 li.active:active{
-	  background: linear-gradient(to bottom, #99ff66 0%, #ff99ff 100%);
+    background: linear-gradient(to bottom, #99ff66 0%, #ff99ff 100%);
 }
 
 li.disabled:hover{
-	  cursor:default;
+    cursor:default;
 }
 
-
 #gototop {
-	  position:fixed;
-	  left:0;
-	  bottom:0;
-	  z-index:999;
-	  #background:#ff9;
+    position:fixed;
+    left:0;
+    bottom:0;
+    z-index:999;
+    /* background:#ff9; */
 }
 
 #gototop a {
     font-family: sans-serif;
-	  background:#fff;
-	  /* font-size:1.5em; */
-	  font-size:1.1em;
-	  border-top-left-radius: 0.5em;
-	  border-bottom-right-radius: 0em;
-	  border-top-right-radius: 0.5em;
-	  box-shadow: 0.15em 0.15em 1em #aaa;
-	  opacity:0.95;
-	  /* border: 0.1em solid #ddf; */
-	  border: 0.1em solid #eee;
-	  /* border-bottom: 1.4em solid #ddf; */
-	  border-bottom: 1.4em solid #eee;
+    background:#fff;
+    /* font-size:1.5em; */
+    font-size:1.1em;
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0em;
+    border-top-right-radius: 0.5em;
+    box-shadow: 0.15em 0.15em 1em #aaa;
+    opacity:0.95;
+    /* border: 0.1em solid #ddf; */
+    border: 0.1em solid #eee;
+    /* border-bottom: 1.4em solid #ddf; */
+    border-bottom: 1.4em solid #eee;
     border-bottom:0;
-	  color: blue;
+    color: blue;
     display: block;
-	/* padding:0.3em 1em 0.7em 1em; */
-	padding:0.5em 1em 0.5em 1em;
-	text-decoration:none;
-	/* font-style: italic; */
-	color: #ccc;
+    /* padding:0.3em 1em 0.7em 1em; */
+    padding:0.5em 1em 0.5em 1em;
+    text-decoration:none;
+    /* font-style: italic; */
+    color: #ccc;
 }
 
 #gototop a:visited {
@@ -215,12 +208,11 @@ div.gallery-item > p.description {
     margin: 0;
     /* line-height: 1.4em; */
     line-height: 1.3em;
-    
-  box-shadow: 0.15em 0.15em 0 #999;
+    box-shadow: 0.15em 0.15em 0 #999;
 }
 
 .rainbow-text {
-   background: red; /* For browsers that do not support gradients */
+    background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, orange , violet); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, orange, violet); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, orange, violet); /* For Firefox 3.6 to 15 */
@@ -229,12 +221,10 @@ div.gallery-item > p.description {
     -webkit-text-fill-color: transparent;
 }
 
-
 @import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
 
-
 #web-design {
-  font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     display: inline-block;
     background: #f9f9f9;
     /*background: linear-gradient(to bottom, #fff 0%, #f9f9f9 100%);*/
@@ -252,7 +242,7 @@ div.gallery-item > p.description {
 }
 
 img.gallery-image {
-	  background: white;
+    background: white;
     width: 25em;
     display: inline-block;
     vertical-align:top;
@@ -303,7 +293,7 @@ img.gallery-image:hover {
     border-bottom: 0.5em dotted #d0d0d0;
     margin: -0.5em;
     padding-right: 1em;
-   background: red; /* For browsers that do not support gradients */
+    background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(left, orange , violet); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(right, orange, violet); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, orange, violet); /* For Firefox 3.6 to 15 */
@@ -322,11 +312,10 @@ img.gallery-image:hover {
     height: 5em;
 }
 
-
 ul#index {
     display:inline-block;
 }
 
 table.image-data {
-	border: 1px silver solid;
+    border: 1px silver solid;
 }

@@ -11,8 +11,23 @@
     float: left;
     position: absolute;
     top: 0;
+
 }
 
+#bob {
+	font-size: 1.1em;
+	line-height: 1.3em;
+	border:1px soild black;
+	padding:0.2em 0.4em;
+	display: inline-block;
+	min-width: 20em;
+	max-width: 100%;
+	background: url('img/Mag.png') center right no-repeat;
+	background-size: 1.3em 1.3em;
+	
+	
+
+}
 body {
     /* font-family: Pacifico; */
     font-family: 'Pacifico', cursive;

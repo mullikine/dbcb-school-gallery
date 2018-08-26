@@ -28,6 +28,8 @@ foreach($files as $f) {
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>A</title>
 <link href="Style.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="top"><!-- <a accesskey="g" nohref="nohref">i</a> --></div>
@@ -37,8 +39,12 @@ foreach($files as $f) {
 <?php require "svg-logo.php"; ?>
 </div>
 
-<div id="header"></div>
+<div id="header">
+	<input id="bob"/>
+	<div id="results"></div>
+	</div>
        <div>
+       
 <?php
      function sum($carry, $item)
      {

@@ -16,13 +16,21 @@
 #bob {
     font-size: 1.1em;
     line-height: 1.3em;
-    border: 1px soild black;
+    border: 0.3em solid #eee;
+    font-weight: bold;
+    color: #66f;
+    border-radius: 0.5em;
     padding: 0.2em 0.4em;
     display: inline-block;
     min-width: 20em;
     max-width: 100%;
-    background: url('img/Mag.png') center right no-repeat;
+    background: white url('img/Mag.png') center right no-repeat;
     background-size: 1.3em 1.3em;
+    outline-style:none;
+}
+
+#bob:focus {
+    border-color: #99f;
 }
 
 body {
@@ -82,7 +90,7 @@ li {
     border-radius: 0.2em;
 }
 
-li > a {
+li > a, h2.alpha {
     font-family: Pacifico;
     min-width: 1em;
     padding:0.5em 0.55em 0.4em 0.55em;
@@ -91,6 +99,21 @@ li > a {
     color: black;
     font-weight: bold;
     box-shadow: 0.15em 0.15em 0 #ddd;
+}
+
+h2.alpha {
+    background:#eee;
+}
+
+#exhibit {
+    background: #ddd url(img/White-Paper-Seamless-Pattern-For-Website-Background.jpg) repeat;
+    padding: 1em;
+}
+
+#exhibit-name {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 li.active{
@@ -199,6 +222,7 @@ div.gallery-item > p.description {
     color: #444;
     font-size: 1.1em;
     display: inline-block;
+    font-family: serif;
     background: white;
     background: #f3f3f3;
     max-width: 35em;
@@ -267,7 +291,7 @@ img.gallery-image:hover {
 }
 
 .image-holder {
-    background: white;
+    /* background: white; */
 }
 
 .image-holder > img {
@@ -280,17 +304,17 @@ img.gallery-image:hover {
     position:relative;
     top:0;
     left:0;
-    border:1px solid red;
 }
 
 #toitu-logo {
-    float: left;
-    position: absolute;
+    float: right;
+    /* position: absolute; */
     opacity: 0.2;
-    display: inline-block;
+    display: block;
+    text-align: center;
     width: 10em;
     padding: 0.5em;
-    border-bottom: 0.5em dotted #d0d0d0;
+    /* border-bottom: 0.5em dotted #d0d0d0; */
     margin: -0.5em;
     padding-right: 1em;
     background: red; /* For browsers that do not support gradients */
@@ -310,6 +334,7 @@ img.gallery-image:hover {
 #header {
     /* background: red; */
     height: 5em;
+    display:block;
 }
 
 ul#index {
@@ -318,4 +343,30 @@ ul#index {
 
 table.image-data {
     border: 1px silver solid;
+}
+
+#results-summary {
+    display: block;
+}
+
+.ib {
+    display: inline-block;
+    font-family: "Serif";
+    vertical-align:middle;
+    /* text-decoration:underline; */
+    color:#ccc;
+}
+
+.alphabet {
+    display:block;
+    break:both;
+}
+
+#results-summary {
+    font-family: serif;
+    text-align:left;
+    background: #f7f7f7;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: 0.1em solid #f0f0f0;
 }

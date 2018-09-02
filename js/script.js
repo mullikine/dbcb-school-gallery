@@ -18,11 +18,19 @@ $(document).ready(function() {
     for (var i = 0; i < keys.length; i++) {
         var key_id = keys[i].getElementsByTagName("a")[0].id;
 
-        $("#" + key_id).bind('click',
-                       function(e) {
-                           document.getElementById("bob").value = document.getElementById("bob").value + event.target.id.replace("key_", "");
-                           changequery();
-                       });
+        if (key_id.match(/key_/)) {
+            $("#" + key_id).bind('click',
+                           function(e) {
+                               document.getElementById("bob").value = document.getElementById("bob").value + event.target.id.replace("key_", "");
+                               changequery();
+                           });
+        } else if (key_id.match(/backspace/)) {
+            $("#" + key_id).bind('click',
+                           function(e) {
+                               document.getElementById("bob").value = document.getElementById("bob").value.replace(/.$/, "");
+                               changequery();
+                           });
+        }
 
     }
 

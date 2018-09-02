@@ -30,9 +30,10 @@
 <ul id="keyboard">
 <?php
 foreach(range('a','z') as $v){
-  echo '<li class="active"><a id="key_'.$v.'" nohref="nohref" class="noselect">', ucfirst($v), '</a></li>';
+  echo '<li class="active"><a id="key_'.$v.'" nohref="nohref" class="keyboard_key noselect">', ucfirst($v), '</a></li>';
 }
 ?>
+<li class="active"><a id="backspace" nohref="nohref" class="keyboard_key noselect">&#x232B;</a></li>
 </ul>
 </div>
 

@@ -371,6 +371,21 @@ table.image-data {
     color:#ccc;
 }
 
+a.keyboard_key {
+    font-family: "Sans-serif";
+    width: 1em;
+}
+
+#keyboard > li {
+    display: inline-block;
+}
+
+#backspace {
+    background: #999;
+    display: inline-block;
+    color: white;
+}
+
 .alphabet {
     display:block;
     break:both;

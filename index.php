@@ -23,6 +23,25 @@
     </form>
 </div>
 
+<div class="alphabet noselect">
+<h2 class="ib noselect">Keyboard</h2>
+<!-- <h2 style="display:inline-block">Index</h2> -->
+
+<ul id="keyboard">
+<?php
+foreach(range('a','z') as $v){
+  if (array_key_exists($v, $file_counts) && $file_counts[$v] > 0) {
+    $disabled = false;
+  } else {
+    $disabled = true;
+  }
+
+  echo '<li class="active"><a id="key_'.$v.'" nohref="nohref" class="noselect">', ucfirst($v), '</a></li>';
+}
+?>
+</ul>
+</div>
+
 <!-- <br style="break:both;" /> -->
 
 <div id="results">

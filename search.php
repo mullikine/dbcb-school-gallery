@@ -35,8 +35,8 @@ foreach($files as $f) {
 ?>
 
 
-<div class="alphabet">
-<h2 class="ib">A-Z</h2>
+<div class="alphabet noselect">
+<h2 class="ib noselect">A-Z</h2>
 <!-- <h2 style="display:inline-block">Index</h2> -->
 
 <ul id="index">
@@ -49,9 +49,9 @@ foreach(range('a','z') as $v){
   }
 
   if ($disabled) {
-      echo '<li class="disabled"><a nohref="nohref">', ucfirst($v), '</a></li>';
+      echo '<li class="disabled"><a nohref="nohref" class="noselect">', ucfirst($v), '</a></li>';
   } else {
-    echo '<li class="active"><a href="#', $v, '">', ucfirst($v), '</a></li>';
+    echo '<li class="active"><a href="#', $v, '" class="noselect">', ucfirst($v), '</a></li>';
   }
 }
 ?>

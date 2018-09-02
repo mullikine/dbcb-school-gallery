@@ -374,6 +374,12 @@ table.image-data {
 a.keyboard_key {
     font-family: Sans-Serif;
     width: 1em;
+    /* background: #dfc; */
+    background: #f0f0f0;
+}
+
+a.keyboard_key.vowel {
+    background: #cdf;
 }
 
 #keyboard > li {

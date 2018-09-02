@@ -4,7 +4,7 @@
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
 <title>A</title>
-<link href="Style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
 </head>
@@ -29,8 +29,18 @@
 
 <ul id="keyboard">
 <?php
+
+$vowels = array('a','e','i','o','u');
+// use ($vowels) // use only works with lambda. technically, closure
+// function ($quantity) use ($tax, &$total) { .. };
+
+function is_vowel($c) {
+  global $vowels;
+  return in_array($c, $vowels);
+}
+
 foreach(range('a','z') as $v){
-  echo '<li class="active"><a id="key_'.$v.'" nohref="nohref" class="keyboard_key noselect">', ucfirst($v), '</a></li>';
+  echo '<li class="active"><a id="key_'.$v.'" nohref="nohref" class="keyboard_key noselect'.(is_vowel($v) ? " vowel" : "").'">', ucfirst($v), '</a></li>';
 }
 ?>
 <li class="active"><a id="backspace" nohref="nohref" class="keyboard_key noselect">&#x232B;</a></li>

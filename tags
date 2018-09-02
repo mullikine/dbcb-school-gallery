@@ -30,6 +30,7 @@ first_letter	htdocs/index.php	/^$first_letter = lcfirst($f[0]);$/;"	v
 first_letter	search.php	/^    $first_letter = lcfirst($f[0]);$/;"	v
 first_letter	search.php	/^  $first_letter = lcfirst($f[0]);$/;"	v
 fn	search.php	/^  $fn = preg_replace(["\/\\..*$\/"], [""], $item);$/;"	v
+is_vowel	index.php	/^function is_vowel($c) {$/;"	f
 query	search.php	/^  $query = "";$/;"	v
 query	search.php	/^  $query = $_GET['bob'];$/;"	v
 reg	search.php	/^$reg = '\/'.$query.'\/i';$/;"	v
@@ -37,3 +38,4 @@ remove_extension	htdocs/index.php	/^function remove_extension($fp) {$/;"	f
 remove_extension	search.php	/^function remove_extension($fp) {$/;"	f
 s	search.php	/^$s = array_reduce($file_counts, "sum");$/;"	v
 sum	search.php	/^       function sum($carry, $item)$/;"	f
+vowels	index.php	/^$vowels = array('a','e','i','o','u');$/;"	v

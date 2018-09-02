@@ -352,7 +352,7 @@ ul#index {
 }
 
 ul#keyboard {
-    display:inline-block;
+    max-width: 24em;
 }
 
 table.image-data {

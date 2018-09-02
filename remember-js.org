@@ -1,0 +1,92 @@
+[[https://www.smashingmagazine.com/2010/04/seven-javascript-things-i-wish-i-knew-much-earlier-in-my-career/#][7 JavaScript Things I Wish I Knew Much Earlier In My Career  Smashing Magazine]]#
+
+#+BEGIN_SRC javascript
+  var car = new Object();
+  car.colour = 'red';
+  car.wheels = 4;
+  car.hubcaps = 'spinning';
+  car.age = 4;
+
+  // shorter
+  var car = {
+    colour:'red',
+    wheels:4,
+    hubcaps:'spinning',
+    age:4
+  }
+
+
+  var moviesThatNeedBetterWriters = new Array(
+    'Transformers','Transformers2','Avatar','Indiana Jones 4'
+  );Copy
+
+  // shorter
+  var moviesThatNeedBetterWriters = [
+    'Transformers','Transformers2','Avatar','Indiana Jones 4'
+  ];
+
+
+
+  // No such thing as an associative array. 
+  var car = new Array();
+  car['colour'] = 'red';
+  car['wheels'] = 4;
+  car['hubcaps'] = 'spinning';
+  car['age'] = 4;
+
+
+  var direction;
+  if(x < 200){
+    direction = 1;
+  } else {
+    direction = -1;
+  }
+  // ternary
+  var direction = x < 200 ? 1 : -1;
+
+
+
+
+  // json
+
+  var band = {
+    "name":"The Red Hot Chili Peppers",
+    "members":[
+      {
+        "name":"Anthony Kiedis",
+        "role":"lead vocals"
+      },
+      {
+        "name":"Michael 'Flea' Balzary",
+        "role":"bass guitar, trumpet, backing vocals"
+      }, 
+      {
+        "name":"Chad Smith",
+        "role":"drums,percussion"
+      },
+      {
+        "name":"John Frusciante",
+        "role":"Lead Guitar"
+      }
+    ],
+    "year":"2009"
+  }
+#+END_SRC
+
+
+
+#+BEGIN_SRC html
+  <div id="delicious"></div><script>
+  function delicious(o){
+    var out = '<ul>';
+    for(var i=0;i<o.length;i++){
+      out += '<li><a href="' + o[i].u + '">' + 
+             o[i].d + '</a></li>';
+    }
+    out += '</ul>';
+    document.getElementById('delicious').innerHTML = out;
+  }
+  </script>
+  <script src="http://feeds.delicious.com/v2/json/codepo8/javascript?count=15&callback=delicious"></script>Copy
+
+#+END_SRC

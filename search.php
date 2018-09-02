@@ -2,14 +2,19 @@
 
 //print_r($_GET);
 
-$query = $_GET['bob'];
+if (isset($_GET['bob'])) {
+  $query = $_GET['bob'];
+} else {
+  $query = "";
+}
 
 $dir ='gallery-images';
 $reg = '/'.$query.'/i';
 
-$files = array_filter(scandir($dir), function($item) {
-    // print_r($reg.$_GET['bob'].$item);
-    return !is_dir($item) && preg_match("/.jpg$/", $item) && ( strlen($_GET['bob']) == 0 || preg_match("/" . $_GET['bob']. "./i", $item) );
+$files = array_filter(scandir($dir), function($item) use ($query) {
+  $fn = preg_replace(["/\..*$/"], [""], $item);
+    // echo($reg."\n".$query."\n".$item."\n".$fn."\n_____");
+    return !is_dir($item) && preg_match("/.jpg$/", $item) && ( strlen($query) == 0 || preg_match("/" .$query. "./i", $fn) );
 });
 
 // print_r($files);

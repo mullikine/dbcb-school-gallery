@@ -5,15 +5,35 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
 content	htdocs/index.php	/^    $content = file_get_contents($fn);$/;"	v
+content	search.php	/^    $content = file_get_contents($fn);$/;"	v
 current_letter	htdocs/index.php	/^		$current_letter = $first_letter;$/;"	v
 current_letter	htdocs/index.php	/^$current_letter = NULL;$/;"	v
+current_letter	search.php	/^    $current_letter = $first_letter;$/;"	v
+current_letter	search.php	/^$current_letter = NULL;$/;"	v
+data_file	search.php	/^  $data_file="gallery-images\/".remove_extension($f).".csv";$/;"	v
 description_file	htdocs/index.php	/^	$description_file="gallery-images\/".remove_extension($f).".txt";$/;"	v
+description_file	search.php	/^  $description_file="gallery-images\/".remove_extension($f).".txt";$/;"	v
 dir	htdocs/index.php	/^$dir ='gallery-images';$/;"	v
+dir	search.php	/^$dir ='gallery-images';$/;"	v
 disabled	htdocs/index.php	/^		$disabled = false;$/;"	v
 disabled	htdocs/index.php	/^		$disabled = true;$/;"	v
+disabled	search.php	/^    $disabled = false;$/;"	v
+disabled	search.php	/^    $disabled = true;$/;"	v
 file_counts	htdocs/index.php	/^$file_counts = array();$/;"	v
+file_counts	search.php	/^$file_counts = array();$/;"	v
 file_get_contents_utf8	htdocs/index.php	/^function file_get_contents_utf8($fn) {$/;"	f
+file_get_contents_utf8	search.php	/^function file_get_contents_utf8($fn) {$/;"	f
 files	htdocs/index.php	/^$files = array_filter(scandir($dir), function($item) {$/;"	v
+files	search.php	/^$files = array_filter(scandir($dir), function($item) use ($query) {$/;"	v
 first_letter	htdocs/index.php	/^	$first_letter = lcfirst($f[0]);$/;"	v
 first_letter	htdocs/index.php	/^$first_letter = lcfirst($f[0]);$/;"	v
+first_letter	search.php	/^    $first_letter = lcfirst($f[0]);$/;"	v
+first_letter	search.php	/^  $first_letter = lcfirst($f[0]);$/;"	v
+fn	search.php	/^  $fn = preg_replace(["\/\\..*$\/"], [""], $item);$/;"	v
+query	search.php	/^  $query = "";$/;"	v
+query	search.php	/^  $query = $_GET['bob'];$/;"	v
+reg	search.php	/^$reg = '\/'.$query.'\/i';$/;"	v
 remove_extension	htdocs/index.php	/^function remove_extension($fp) {$/;"	f
+remove_extension	search.php	/^function remove_extension($fp) {$/;"	f
+s	search.php	/^$s = array_reduce($file_counts, "sum");$/;"	v
+sum	search.php	/^       function sum($carry, $item)$/;"	f

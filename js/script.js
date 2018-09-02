@@ -11,6 +11,21 @@ function changequery(flags) {
 }
 
 $(document).ready(function() {
+
+    // .getElementsByTagName("a")
+
+    var keys = document.getElementById("keyboard").getElementsByTagName("li");
+    for (var i = 0; i < keys.length; i++) {
+        var key_id = keys[i].getElementsByTagName("a")[0].id;
+
+        $("#" + key_id).bind('click',
+                       function(e) {
+                           document.getElementById("bob").value = document.getElementById("bob").value + event.target.id.replace("key_", "");
+                           changequery();
+                       });
+
+    }
+
     $("#bob").bind('click',
                    function(e) {
                        searchselect();

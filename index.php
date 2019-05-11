@@ -3,11 +3,49 @@
 <head>
 <meta content="en-us" http-equiv="Content-Language" />
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-<title>A</title>
+<title>Portrait Gallery</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/script.js" type="text/javascript"></script>
+
+<!-- autocomplete -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+  </script>
 </head>
+
 <body>
 <div id="top"><!-- <a accesskey="g" nohref="nohref">i</a> --></div>
 <div id="content">
@@ -21,8 +59,13 @@
     	<input id="bob" name="bob" value="Search..." />
         <input style="display:none" type="submit" id="submitbtn" value="Search"/>
     </form>
+   
+  <div class="ui-widget">
+    <label for="tags">Tags: </label>
+    <input id="tags">
+  </div>
 </div>
-
+ 
 <div class="alphabet noselect">
 <h2 class="ib noselect">Keyboard</h2>
 <!-- <h2 style="display:inline-block">Index</h2> -->

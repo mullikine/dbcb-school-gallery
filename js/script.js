@@ -19,12 +19,23 @@ $(document).ready(function() {
         var key_id = keys[i].getElementsByTagName("a")[0].id;
 
         if (key_id.match(/key_/)) {
+            
+            $("#" + key_id).bind('onContextMenu',
+                           function(e) {
+                               return false;
+                           });
+
             $("#" + key_id).bind('click',
                            function(e) {
                                document.getElementById("bob").value = document.getElementById("bob").value + event.target.id.replace("key_", "");
                                changequery();
                            });
         } else if (key_id.match(/backspace/)) {
+            $("#" + key_id).bind('onContextMenu',
+                           function(e) {
+                               return false;
+                           });
+
             $("#" + key_id).bind('click',
                            function(e) {
                                document.getElementById("bob").value = document.getElementById("bob").value.replace(/.$/, "");
